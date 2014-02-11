@@ -1,0 +1,87 @@
+body{font-family:'Open Sans', sans; font-size:100%; color:black;}
+
+table{margin:0 auto; text-align:center;}
+table, td{border-collapse: collapse; border:black 2px solid; padding:10px;}
+.name{padding-right:80px; text-align:left;}
+
+a:visited, a:link {color:#0000CF; text-decoration:none;}
+a:hover {color:black;}
+
+	h1,h2,h3,h4{
+text-decoration:none;
+line-height:135%;
+padding:0px;
+margin:0px;
+font-weight:normal;
+}
+
+article h1{padding-bottom:20px;}
+
+	article {
+line-height:140%;
+text-align:justify;
+}
+
+@Media Screen{
+
+body{background-color: white;}
+
+	article {
+position:absolute;
+top:50px;
+left:50%;
+margin-left:-160px;
+width:580px;
+font-size:1.2em;
+padding-bottom:60px;
+}
+
+	header {
+position:fixed;
+top:50px;
+left:50%;
+margin-left:-425px;
+z-index:1;
+}
+
+header a{color:Black !important; font-size:2em;}
+
+	nav {
+position:fixed;
+top:50px;
+left:50%;
+padding-top:25px;
+margin-left:-430px;
+font-size:1.5em;
+border-right:1px solid gray;
+}
+
+	nav ul {
+list-style-type:none;
+padding-right:40px;
+text-align:right;
+}
+
+	nav ul li a{
+display:block;
+line-height:220%;
+}
+
+}
+
+@Media Print{
+article {width:100%; margin-left:0px; left:0%;}
+header {Display:none;}
+nav {Display:none;}
+}
+
+@Media screen and (max-width:850px) {
+article {position:static; padding-left:20px; padding-right:20px; margin:0 auto; width:auto; max-width:580px;}
+header {position:absolute; left:50%; margin-left:-100px; top:10px;}
+header a{font-size:2.5em;}
+
+nav {position:static; margin:0 auto; padding-top:40px; border:0px;}
+nav ul{text-align:center !important; line-height:300%;}
+nav ul li { display:inline; margin:0; padding-right:10px;}
+nav ul li a {display:inline; margin:0; padding:10px; border:1px grey dotted;}
+}
