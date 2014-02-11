@@ -4,7 +4,7 @@ table{margin:0 auto; text-align:center;}
 table, td{border-collapse: collapse; border:black 2px solid; padding:10px;}
 .name{padding-right:80px; text-align:left;}
 
-a:visited, a:link {color:red; text-decoration:none;}
+a:visited, a:link {color:gray; text-decoration:none;}
 a:hover {color:grey;}
 
 	h1,h2,h3,h4{
