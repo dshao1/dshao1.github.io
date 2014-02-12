@@ -3,10 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, maximum-scale=2"/>
-<title>{{ page.title }} | Daniel Shao Flute</title>
-<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<title>{% if page.title != 'Home' %}{{ page.title }} | {% endif %}Daniel Shao Flute</title>
 <style type="text/css"> @import url("http://fonts.googleapis.com/css?family=Open+Sans:300,700"); @import url("style.css"); </style>
-<script async src="google.js"></script>
 </head>
 
 <body>
