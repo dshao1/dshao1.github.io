@@ -9,8 +9,6 @@
 <script async src="google.js"></script>
 </head>
 
--{{ page.home_layout }}-
-
 <body>
 <header><a href="http://danielshao.co.uk">Daniel Shao</a></header>
 
@@ -23,7 +21,7 @@
 <li><a href="Contact">Contact</a></li>
 </ul></nav>
 
-<article>{% if page.home_layout != 'true' %}<h1>{{ page.title }}</h1>{% else %}{% endif %}
+<article>{% if page.home_layout == 'true' %}yes{% endif %}<h1>{{ page.title }}</h1>
 {{ content }}
 </article>
 
