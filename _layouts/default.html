@@ -21,7 +21,7 @@
 <li><a href="Contact">Contact</a></li>
 </ul></nav>
 
-<article><h1>{% if page.home_layout != 'true' %}{{ page.title }}</h1>{% endif %}
+<article><h1>{% if page.home_layout == 'true' %}{{ page.title }}</h1>{% endif %}
 {{ content }}
 </article>
 
