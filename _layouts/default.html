@@ -1,6 +1,5 @@
 <!DOCTYPE html><html><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, maximum-scale=2"/>
 <title>{% if page.title != 'Home' %}{{ page.title }} | {% endif %}Daniel Shao Flute</title>
-<style type="text/css"> @import url("http://fonts.googleapis.com/css?family=Open+Sans:300,700"); @import url("style.css"); {% if page.title == 'Home' %}article{padding-bottom:30px !important;}{% endif %} </style>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -8,7 +7,11 @@
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
   ga('create', 'UA-6673602-6', 'danielshao.co.uk');
   ga('send', 'pageview');
-</script></head><body><header><a href="http://danielshao.co.uk">Daniel Shao</a></header>
+</script>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet" type="text/css">
+<link href="style.css" rel="stylesheet" type="text/css">
+<style type="text/css">{% if page.title == 'Home' %}article{padding-bottom:30px !important;}{% endif %}</style>
+</head><body><header><a href="http://danielshao.co.uk">Daniel Shao</a></header>
 <nav><ul>
 <li><a href="index">Home</a></li>
 <li><a href="Biography">Biography</a></li>
